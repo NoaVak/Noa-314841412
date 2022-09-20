@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Static/StylesCss.css">
+    <script defer src="../Static/Project's JS.js"></script>
+    <title>Shopping Cart Page</title>
+</head>
+<body>
+    <div id="gridContainer">
+        <div class="grid-top">
+            <a href="Sopping Cart.html">
+            <img class="shoppingCart" src="../Project Pics/shopping Cart.svg" alt="shoppinCart" >
+            </a>
+
+            <center>
+                <nav>
+                    <ul class="moveToHeader">
+                        <a  href="Html Home Page.html">Home Page</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Cupcake Page.html">Cupcake</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Birthday Cakes Page.html">BirthdayCakes</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Paistries Page.html">Paistries</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Sign In.html">Sign In</a> &nbsp &nbsp &nbsp &nbsp  
+                        <a  href="Sopping Cart.html">Sopping Cart</a>
+                    </ul>
+                </nav>
+            </center>
+        </div>
+
+        <div id="grid-left"> 
+            <img  class="LogoImg" src="../Project Pics/Logo.png" alt="LogoPic">
+        </div>
+
+        <div id="grid-main">
+            <h1 id="MyHeader">Shopping Cart</h1>
+            <table class="ShopingTable">
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                        <th>Item Quantity</th>
+                        <th>Total Item Price</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>1</th>
+                    <th>B-cake1</th>
+                    <th>$100</th>
+                    <th><input type="number" value="1" class="CartQTY"></th>
+                    <th>$100</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>B-cake5</th>
+                    <th>$100</th>
+                    <th><input type="number" value="1" class="CartQTY"></th>
+                    <th>$100</th>
+                </tr>
+            </table><br><br>
+            <div class="TotalPrice">
+                <table class="TotalPriceTable">
+                    <tr>
+                        <td>Friendship Discount:</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Total Payment:</td>
+                        <td>$200.00</td>
+                    </tr>
+                </table> <br><br><br><br>
+
+                <div class="LocatinBlurSelcation" id="blur">
+                    <a href="#" id="blur"> 
+                        <img class="approve" id="LocationLogo" src="../Project Pics/location logo.svg" alt="locationLogo" onclick="toggle()">
+                    </a>
+                </div>
+                <h3 id="cartSummery">Click To Set Location</h3>
+            </div>
+            <div id="PopUp" id="blur"><br>
+                <h3 id="msgAPProved"> Choose Your Preferd Brunch:</h3><br><br>
+                <form  class="StatusForm" action="#">
+                    <label for="Location">Choose Your Preferd Brunch:</label>
+                    <select name="Location" id="Location">
+                       <option value="Tel-Aviv">Tel-Aviv</option>
+                       <option value="Beer Sheva">Beer Sheva</option>
+                    </select>
+                </form>
+                <a id="clickAproval" href="#" onclick="toggle()">Ok</a><br><br>
+            </div><br> <br>
+
+                <button  id="PaymentButton"  class="PaymentButton">Click To Pay</button><br><br>
+        </div>
+    </body>
+</html>

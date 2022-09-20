@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Static/StylesCss.css">
+    <script defer src="../Static/Project's JS.js"></script>
+    <title>Baker's Orders Page</title>
+</head>
+<body>
+    <div id="gridContainer">
+        <div class="grid-top">
+            <center>
+                <nav>
+                    <ul class="moveToHeader">
+                        <a  href="Html Home Page.html">Customer Presention</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Baker's Orders.html">Orders</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Baker SignIn.html">Sign In</a> &nbsp &nbsp &nbsp &nbsp
+                        <a  href="Baker SignIn.html">Log Out</a> 
+
+                    </ul>
+                </nav>      
+            </center>
+        </div>
+
+        <div id="grid-left"> 
+            <img  class="LogoImg" src="../Project Pics/Logo.png" alt="LogoPic">
+        </div>
+
+        <div id="grid-main"> 
+            <h1 id="MyHeader">All Orders</h1>
+            <h4 id="DateTimeHeader">Relavent For:
+            <script>
+                date = new Date().toLocaleDateString();
+                today = new Date();
+                datet = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+                time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                /*document.write(date);*/
+                var dateTime = date+'    '+'    '+'    '+time;
+                document.write(dateTime)
+            </script></h3><br><br>
+            <table class="ordersTable">
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Item Name</th>
+                        <th>Item Quantity</th>
+                        <th>Customer Number</th>
+                        <th>Brunch Related</th>
+                        <th>Status</th>
+
+                    </tr>
+                </thead>
+
+                <tr>
+                    <th>1</th>
+                    <th>B-Cake1</th>
+                    <th>2</th>
+                    <th>5</th>
+                    <th>Tel Aviv</th>
+                    <th>
+                        <form  class="StatusForm" action="#">
+                            <select name="Staus" id="Staus">
+                                <option value="Done">Done</option>
+                                <option value="Preparation">Preparation</option>
+                                <option value="Cancled">Cancled</option>
+                            </select>
+                        </form>
+                    </th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>B-Cake5</th>
+                    <th>1</th>
+                    <th>10</th>
+                    <th>Tel Aviv</th>
+                    <th>
+                        <form  class="StatusForm" action="#">
+                            <select name="Staus" id="Staus">
+                               <option value="Done">Done</option>
+                               <option value="Preparation">Preparation</option>
+                               <option value="Cancled">Cancled</option>
+                            </select>
+                        </form>
+                    </th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>Cupcake1</th>
+                    <th>3</th>
+                    <th>8</th>
+                    <th>Beer Sheva</th>
+                    <th>
+                        <form  class="StatusForm" action="#">
+                            <select name="Staus" id="Staus">
+                                <option value="Preparation">Preparation</option>
+                                <option value="Done">Done</option>
+                                <option value="Cancled">Cancled</option>
+                            </select>
+                        </form>
+                    </th>
+                </tr>
+            </table><br><br>
+        
+            <div class="TotalOrders">
+                <table class="TotalOrdersTable">
+                    <tr>
+                       <td>Total Orders Dotday:</td>
+                       <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Total Orders In Preparation:</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Total Orders Done:</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Total Orders Cancled:</td>
+                        <td>0</td>
+                    </tr>
+                </table> <br><br><br><br><br><br><br><br>
+            </div>  
+        </div>
+    </body>
+</html>

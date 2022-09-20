@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Static/StylesCss.css">
+    <script defer src="../Static/Project's JS.js"></script>
+    <title>Baker's Sign In Page</title>
+</head>
+<body>
+    <div id="gridContainer">
+        <div class="grid-top">
+           <a href="Sopping Cart.html">
+                <img class="shoppingCart" src="../Project Pics/shopping Cart.svg" alt="shoppinCart" >
+            </a>
+            <center>
+                <nav>
+                    <ul class="moveToHeader">
+              
+                        <a  href="Html Home Page.html">Home Page</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Cupcake Page.html">CupCake</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Birthday Cakes Page.html">BirthdayCakes</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Paistries Page.html">Paistries</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Sign In.html">Sign In</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Baker SignIn.html">Baker Sign In</a> 
+                    </ul>
+                </nav>
+            </center>
+        </div>
+
+        <div id="grid-left"> 
+            <img  class="LogoImg" src="../Project Pics/Logo.png" alt="LogoPic">
+        </div>
+
+        <div id="grid-main">
+            <div id="signinmain">
+                <center>
+                    <h1 id="MyHeader">Welcome Back </h1>
+                    <h3 id="secondHeader">Please Sign In </h3> <br><br>
+                </center>
+             
+                <form id="SignInForm" action="Baker's Orders.html" method="post">
+                    <fieldset class="fieldset"><br>
+                        <label id="email" for="email"> Email: </label>
+                        <input type="email" name="email" id="email" class="inputs" placeholder="Noa@Gmail.com" required="[^ @]@[^ @].com"/ >
+                        <br><br>
+
+                        <label for="password">Password: </label>
+                        <input type="password" id="password" name="password" required minlength="8" maxlength="12"/>
+                        <br><br>
+
+                        <label >I'm The Baker</label>
+                        <input type="radio" required> <br><br>
+                        <div> 
+                        <a href="Baker's Orders.html">
+                            <button  id="SignButton" on click="Baker's Orders.html" class="SignButton">Log In</button>
+                        </a><br> <br>
+                    </div>
+                    </fieldset>
+                </form><br>
+                <a href="Sign In.html">
+                    <button  id="CustomerSignIn" class="CustomerSignIn">I'm A Customer</button>
+                </a>
+
+                <a href="Html Home Page.html">
+                    <button  id="backBotton" class="backBotton">Back</button>
+                </a>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

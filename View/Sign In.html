@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Static/StylesCss.css">
+    <script defer src="../Static/Project's JS.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="gridContainer">
+        <div class="grid-top">
+            <a href="Sopping Cart.html">
+                <img class="shoppingCart" src="../Project Pics/shopping Cart.svg" alt="shoppinCart" >
+            </a>
+            <center>
+                <nav>
+                    <ul class="moveToHeader"> 
+                        <a  href="Html Home Page.html">Home Page</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Cupcake Page.html">Cupcake</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Birthday Cakes Page.html">BirthdayCakes</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Paistries Page.html">Paistries</a> &nbsp &nbsp &nbsp &nbsp 
+                        <a  href="Sign In.html">Sign In</a> 
+                    </ul>
+                </nav>
+            </center>
+        </div>
+
+        <div id="grid-left"> 
+            <img  class="LogoImg" src="../Project Pics/Logo.png" alt="LogoPic">
+        </div>
+
+        <div id="grid-main">
+            <div id="signinmain">
+                <center>
+                    <h1 id="MyHeader">Welcome Back </h1>
+                    <h3 id="secondHeader">Please Sign In </h3> <br><br>    
+                </center>
+           
+                <form id="SignInForm" action="Html Home Page.html" method="post">
+                    <fieldset class="fieldset">
+                        <label id="email" for="email"> Email: </label>
+                        <input type="email" name="email" id="email" class="inputs" placeholder="Noa@Gmail.com" required="[^ @]@[^ @].com"/ >
+                        <br><br>
+                        <label for="password">Password: </label>
+                        <input type="password" id="password" name="password" required minlength="8" maxlength="12"/>
+                        <br><br>
+                        <a href="Html Home Page.html"> 
+                            <button type="submit" id="SignButton" class="SignButton">Sign In</button>
+                        </a>
+                        
+                    </fieldset>
+                    
+                </form><br><br>
+
+                <center>
+                    <a href="sign up page.html">
+                        <button id="SignButton" class="SignUpButton">Sign Up</button>
+                    </a> 
+                </center>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

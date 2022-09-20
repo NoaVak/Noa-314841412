@@ -1,0 +1,594 @@
+@import url("https://fonts.googleapis.com/css?family=Galada");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");  
+
+@font-face {
+    font-family: MyFontBold;
+    src: url(../Static/Galada-Regular.ttf);
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+:root {
+    --MyYellow: #F0D090;
+    --Mylight: #FDF0E7;
+    --MyBlue: #86AFBA;
+    --Mypink: #E2B39F;
+    --MyOrange: #D9AF89;
+    --MyRed: #C99A82;
+    --MyBord:#A62349;
+    --MyLightBlue: #96E5D1;
+    --MyDarkBlue: #25316D;
+   --MyLightBrown: #D7C0AE;
+   --MyDarkBrown: #553939;
+}
+
+
+*{
+	
+    margin:1px;
+	padding:0;
+    box-sizing: border-box;
+	font-family: headerfont;
+}
+
+/* Main Style For All Pages  */
+
+ul a:is(:link,:active,:visited) {
+    font-size: large;
+    color: var(--MyBord);
+    text-align: left;
+}
+
+a:is(:link, :active, :visited).active {
+    background-color: var(--MyBlue);
+}
+
+
+@media only screen  and(max-width: 600px){
+    
+
+}
+#gridContainer {
+	display: grid;
+    grid-template-columns:1fr 4fr;
+    grid-template-rows: 100fr 1000fr;
+    grid-template-areas: 
+    'Gleft Gtop Gtop Gtop'
+    'Gleft Gmain Gmain Gmain'  
+    ;
+}
+
+#grid-left{
+    padding-top:2vh;
+    grid-area: Gleft;
+    background-color: var(--MyRed);
+
+}
+
+.grid-top{
+    padding-top:2vh;
+    padding-bottom:2vh;
+    grid-area: Gtop;
+    background-color: var(--Mylight);
+    
+}
+
+#grid-main{
+    padding-top:2vh;
+    grid-area: Gmain;
+   background-color: var(--Mylight);
+}
+#MyMainHeader{
+    font-family: MyFontBold;
+	margin-top: 3%;
+    font-size: xxx-large;
+	text-align: center;
+	color: var(--MyBord);
+	font-weight: bold;
+	margin-left: 0;
+    letter-spacing: 5px;
+}
+
+
+#MyHeader{
+    font-family: MyFontBold;
+	margin-top: 3%;
+    font-size: 70px;
+	text-align: center;
+	color: var(--MyBord);
+	font-weight: bold;
+	margin-left: 0;
+    letter-spacing: 7px;
+}
+
+#secondHeader{
+    font-family: MyFontBold;
+	margin-top: 3%;
+	font-size: 40px;
+	text-align: center;
+	color: var(--MyBord);
+	font-weight: bold;
+	margin-left: 0;
+
+}
+.shoppingCart{
+    margin-top: 0%;
+    border-top: 0ch;
+    width: 7%;
+    height: 70%;
+    float: right;
+    cursor: pointer;
+}
+.linkHeader{
+    font-size: large;
+    color: var(--MyBord);
+}
+
+.LogoImg{
+    width: 100%;
+}
+
+
+
+SignButton:hover{
+    transition: width 50s;
+}
+a:hover{
+    transition: width 50s;
+    background-color: var(--Mypink);
+}
+
+
+
+
+
+
+
+/* Home Page Style  */
+
+#OwnerEntrance{
+    color: var(--MyBord);
+    text-align: center;
+    border-bottom: none;
+}
+.homePagePic{
+    width: 100%;
+    height: 25%;
+    border-color: var(--MyBord);
+}
+.HomePageGallery{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: left;
+}
+.HPImg{
+    width: 30vh;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.linkHomePage{
+    font-size: medium;
+    color: var(--MyBord);
+    cursor: pointer;
+    position:relative;
+    
+}
+.HPImg:hover{
+ 
+    border:7px solid var(--MyBord);
+    transition: 0.4s;
+
+  }
+ h2{
+    position:relative;
+    letter-spacing: 10%;
+    color: var(#FDF0E7);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, var(--MyBlue));
+    line-height: 0.80em;
+    outline: none;
+    animation: homePageAnimate 3s linear infinite;
+ }
+ @keyframes homePageAnimate{
+    0%{
+        color:var(--Mylight);
+        box-shadow: none;
+    }
+    100%{
+        color: var(--MyDarkBlue);
+        box-shadow: 0 0 10px #FDF0E7;
+    }
+ }
+
+#weekenedSale{
+width: 100%;
+}
+
+
+
+
+ /*Sign In/Up Page*/
+
+ #SignInForm,#SignUpForm{
+    border: var(--MyDarkBrown);
+    font-size: xx-large;
+    color: var(--MyDarkBrown);
+   
+ }
+ .fieldset{
+   
+    padding: min(3%);
+    width:100%;
+    color: var(--MyDarkBrown);
+    border-color: var(--MyDarkBrown);
+ }
+
+ .SignButton{
+    
+    width: 20%;
+    color: var(--MyBord);
+    background-color: var(--Mypink);
+    font-size: xx-large;
+    font-weight: bold;
+    float: right;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+ }
+
+ .CustomerSignIn{
+    width: 30%;
+    color: var(--MyBord);
+    background-color: var(--MyYellow);
+    font-size: xx-large;
+    font-weight: bold;
+    float: left;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+ }
+ .SignUpButton{
+    width: 40%;
+    height: 100px;
+    color: var(--MyBord);
+    background-color: var(--MyLightBrown);
+    font-size: xx-large;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+ }
+
+.backBotton{
+    width: 10%;
+    color: var(--MyBord);
+    background-color: var(--MyLightBrown);
+    font-size: xx-large;
+    font-weight: bold;
+    float: left;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+
+}
+.SUpHeader{
+    position:relative;
+    color: var(--MyBord);
+    width: 100%;
+    text-align: center;
+    line-height: 0.80em;
+    outline: none;
+    animation: signUpAnim 3s linear ;
+}
+@keyframes signUpAnim{
+    0%{
+        color:var(--Mylight);
+        box-shadow: none;
+    }
+    100%{
+        color: var(--MyRed);
+        box-shadow: 0 0 10px #FDF0E7;
+    }
+ }
+
+ #LinkToNextBakerPage{
+    float: right;
+    color: blue;
+
+ }
+
+  /*Shoping Cart Page*/
+
+  .ShopingTable{
+    border-collapse: collapse;
+    font-size: large;
+    font-weight: bold;
+    min-width: 100%;
+    letter-spacing: 7%;
+    word-spacing: 20%;
+  }
+  .ShopingTable thead tr{
+    background-color: var(--MyDarkBlue);
+    color: var(--Mylight);
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 7%;
+    word-spacing: 20%;
+  }
+
+  .ShopingTable th,
+  .ShopingTable td{
+    padding: 12px 15px;
+    font-size: medium;
+  }
+
+  .ShopingTable tbody tr{
+    background-color: var(--Mylight);
+    border-bottom: 1px solid var(--MyDarkBlue);
+    color: var(--MyDarkBrown);
+    font-weight: bold;
+    letter-spacing: 7%;
+  }
+  .ShopingTable tbody tr:nth-of-type(even){
+    background-color: var(--MyLightBrown);
+  }
+
+  .ShopingTable tbody tr:last-of-type{
+    border-bottom: 2px var(--MyDarkBlue);
+  }
+
+  #cartSummery{
+    color: var(--MyDarkBrown);
+    
+  }
+  #LocationLogo{
+    margin-left: 40px;
+    height: 80px;
+    margin-right: 40px;
+  }
+
+  .TotalPriceTable{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 3px solid var(--MyDarkBlue);
+    width: 100%;
+    max-width: 250px;
+    float: right;
+    word-spacing: 20%;
+    color: var(--MyDarkBrown);
+    font-weight: bold;
+    
+  }
+
+  .TotalPriceTable td:last-child{
+    text-align: left;
+  }
+  .TotalPriceTable tr:last-child{
+    text-align: left;
+  }
+
+  .LocatinBlurSelcation#blur.active{
+    filter: blur(20px) ;
+    pointer-events: none;
+    user-select: none;
+ }
+
+ .PaymentButton{
+    width: 20%;
+    color: var(--MyBord);
+    background-color: var(--Mypink);
+    font-size: X-large;
+    font-weight: bold;
+    float: right;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+
+ }
+
+  /*Gallery Pages*/
+
+  .CakesGallery{
+
+    width: 100%;
+    align-items: center;
+
+
+  }
+  
+  .product-Box{
+  
+    padding: 7%;
+    float: left;
+ 
+
+  }
+
+  .sweetsImg:hover, .B-CakeImg:hover{
+ 
+    border:7px solid var(--MyBord);
+    transition: 0.4s;
+
+  }
+  
+  .B-CakeImg{
+    width: 20vh;
+    height: 30vh;
+    margin: 1px;
+    padding: 5px;
+    align-self: center;
+
+  }
+  .sweetsImg{
+    
+    width: 30vh;
+    height: max(30vh);
+    margin-top: 0;
+    padding:0;
+    display: flex;
+ 
+  }
+
+  .picDesc{
+    padding: 5px;
+    margin: 1px;  
+    text-align: center;
+}
+
+.Price{
+    padding: 5px;
+    margin: 1px;  
+    text-align: center;
+}
+
+.CartQTY{
+    width: 30px;
+}
+
+
+
+
+.approve{
+    position: relative;
+    display: inline-block;
+    margin-left: 25%;
+    float: center;
+    background-color: var(--MyLightBrown);
+    color: var(--MyDarkBrown);
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+}
+
+ #PopUp{
+    position: fixed;
+    border: 1px var(--MyDarkBrown);
+    height: 20%;
+    width: 20%;
+    margin-left: 30%;
+    visibility: hidden;
+    transition: 0.5s;
+    background-color: var(--MyLightBrown);
+    border-radius: 5px;
+    
+ }
+
+ #PopUp.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+ }
+ 
+ .CakesGallery#blur.active{
+    filter: blur(20px) ;
+    pointer-events: none;
+    user-select: none;
+ }
+
+ #msgAPProved{
+    color: var(--MyDarkBrown);
+    font-weight: bold;
+    text-align: center;
+ }
+ #clickAproval{
+    display: inline-block;
+    padding: 5px;
+    margin-left: 45%;
+    float: center;
+    background-color: var(--MyLightBrown);
+    color: var(--MyBord);
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+ }
+
+
+
+
+
+
+  /*Baker's Orders Pages*/
+
+ .ordersTable{
+    border-collapse: collapse;
+    font-size: large;
+    font-weight: bold;
+    min-width: 100%;
+    letter-spacing: 7%;
+    word-spacing: 20%;
+  }
+  .ordersTable thead tr{
+    background-color: var(--MyDarkBlue);
+    color: var(--Mylight);
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 7%;
+    word-spacing: 20%;
+  }
+
+  .ordersTable th,
+  .ordersTable td{
+    padding: 12px 15px;
+    font-size: medium;
+  }
+
+  .ordersTable tbody tr{
+    background-color: var(--Mylight);
+    border-bottom: 1px solid var(--MyDarkBlue);
+    color: var(--MyDarkBrown);
+    font-weight: bold;
+    letter-spacing: 7%;
+  }
+  .ordersTable tbody tr:nth-of-type(even){
+    background-color: var(--MyLightBrown);
+  }
+
+  .ordersTable tbody tr:last-of-type{
+    border-bottom: 2px var(--MyDarkBlue);
+  }
+
+  #cartSummery{
+    color: var(--MyDarkBrown);
+    
+  }
+ 
+
+  .TotalOrdersTable{
+    display: flex;
+    letter-spacing: 0.2px;
+    justify-content: flex-end;
+    border-top: 3px solid var(--MyDarkBlue);
+    width: 100%;
+    max-width: 250px;
+    float: right;
+    word-spacing: 20%;
+    color: var(--MyDarkBrown);
+    font-weight: bold;
+    
+  }
+
+  .TotalOrdersTable td:last-child{
+    text-align: left;
+  }
+  .TotalOrdersTable tr:last-child{
+    text-align: left;
+  }
+#DateTimeHeader{
+    font-family: MyFontBold;
+	margin-top: 3%;
+	font-size: 25PX;
+	text-align: center;
+	color: var(--MyBord);
+	font-weight: bold;
+	margin-left: 0;
+    letter-spacing: 0.3px;
+    word-spacing: 1PX;
+}
