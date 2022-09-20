@@ -24,22 +24,22 @@
 
 *{
 	
-    margin:1px;
+  margin:1px;
 	padding:0;
-    box-sizing: border-box;
+  box-sizing: border-box;
 	font-family: headerfont;
 }
 
 /* Main Style For All Pages  */
 
 ul a:is(:link,:active,:visited) {
-    font-size: large;
-    color: var(--MyBord);
-    text-align: left;
+  font-size: large;
+  color: var(--MyBord);
+  text-align: left;
 }
 
 a:is(:link, :active, :visited).active {
-    background-color: var(--MyBlue);
+  background-color: var(--MyBlue);
 }
 
 
@@ -49,59 +49,58 @@ a:is(:link, :active, :visited).active {
 }
 #gridContainer {
 	display: grid;
-    grid-template-columns:1fr 4fr;
-    grid-template-rows: 100fr 1000fr;
-    grid-template-areas: 
-    'Gleft Gtop Gtop Gtop'
-    'Gleft Gmain Gmain Gmain'  
-    ;
+  grid-template-columns:1fr 4fr;
+  grid-template-rows: 100fr 1000fr;
+  grid-template-areas: 
+  'Gleft Gtop Gtop Gtop'
+  'Gleft Gmain Gmain Gmain';
 }
 
 #grid-left{
-    padding-top:2vh;
-    grid-area: Gleft;
-    background-color: var(--MyRed);
+  padding-top:2vh;
+  grid-area: Gleft;
+  background-color: var(--MyRed);
 
 }
 
 .grid-top{
-    padding-top:2vh;
-    padding-bottom:2vh;
-    grid-area: Gtop;
-    background-color: var(--Mylight);
+  padding-top:2vh;
+  padding-bottom:2vh;
+  grid-area: Gtop;
+  background-color: var(--Mylight);
     
 }
 
 #grid-main{
-    padding-top:2vh;
-    grid-area: Gmain;
-   background-color: var(--Mylight);
+  padding-top:2vh;
+  grid-area: Gmain;
+  background-color: var(--Mylight);
 }
 #MyMainHeader{
-    font-family: MyFontBold;
+  font-family: MyFontBold;
 	margin-top: 3%;
-    font-size: xxx-large;
+  font-size: xxx-large;
 	text-align: center;
 	color: var(--MyBord);
 	font-weight: bold;
 	margin-left: 0;
-    letter-spacing: 5px;
+  letter-spacing: 5px;
 }
 
 
 #MyHeader{
-    font-family: MyFontBold;
+  font-family: MyFontBold;
 	margin-top: 3%;
-    font-size: 70px;
+  font-size: 70px;
 	text-align: center;
 	color: var(--MyBord);
 	font-weight: bold;
 	margin-left: 0;
-    letter-spacing: 7px;
+  letter-spacing: 7px;
 }
 
 #secondHeader{
-    font-family: MyFontBold;
+  font-family: MyFontBold;
 	margin-top: 3%;
 	font-size: 40px;
 	text-align: center;
@@ -119,22 +118,22 @@ a:is(:link, :active, :visited).active {
     cursor: pointer;
 }
 .linkHeader{
-    font-size: large;
-    color: var(--MyBord);
+  font-size: large;
+  color: var(--MyBord);
 }
 
 .LogoImg{
-    width: 100%;
+  width: 100%;
 }
 
 
 
 SignButton:hover{
-    transition: width 50s;
+  transition: width 50s;
 }
 a:hover{
-    transition: width 50s;
-    background-color: var(--Mypink);
+  transition: width 50s;
+  background-color: var(--Mypink);
 }
 
 
@@ -146,43 +145,43 @@ a:hover{
 /* Home Page Style  */
 
 #OwnerEntrance{
-    color: var(--MyBord);
-    text-align: center;
-    border-bottom: none;
+  color: var(--MyBord);
+  text-align: center;
+  border-bottom: none;
 }
 .homePagePic{
-    width: 100%;
-    height: 25%;
-    border-color: var(--MyBord);
+  width: 100%;
+  height: 25%;
+  border-color: var(--MyBord);
 }
 .HomePageGallery{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    align-items: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: left;
 }
 .HPImg{
-    width: 30vh;
-    height: 30vh;
-    margin: 0;
-    padding: 0;
+  width: 30vh;
+  height: 30vh;
+  margin: 0;
+  padding: 0;
 
 }
 
 
 .linkHomePage{
-    font-size: medium;
-    color: var(--MyBord);
-    cursor: pointer;
-    position:relative;
-    
+  font-size: medium;
+  color: var(--MyBord);
+  cursor: pointer;
+  position:relative;   
 }
+
 .HPImg:hover{
  
-    border:7px solid var(--MyBord);
-    transition: 0.4s;
-
+  border:7px solid var(--MyBord);
+  transition: 0.4s;
   }
+
  h2{
     position:relative;
     letter-spacing: 10%;
@@ -195,6 +194,7 @@ a:hover{
     outline: none;
     animation: homePageAnimate 3s linear infinite;
  }
+
  @keyframes homePageAnimate{
     0%{
         color:var(--Mylight);
@@ -207,7 +207,7 @@ a:hover{
  }
 
 #weekenedSale{
-width: 100%;
+  width: 100%;
 }
 
 
@@ -230,7 +230,6 @@ width: 100%;
  }
 
  .SignButton{
-    
     width: 20%;
     color: var(--MyBord);
     background-color: var(--Mypink);
@@ -278,8 +277,8 @@ width: 100%;
 
 }
 .SUpHeader{
-    position:relative;
-    color: var(--MyBord);
+  position:relative;
+  color: var(--MyBord);
     width: 100%;
     text-align: center;
     line-height: 0.80em;
@@ -395,26 +394,18 @@ width: 100%;
   /*Gallery Pages*/
 
   .CakesGallery{
-
     width: 100%;
     align-items: center;
-
-
   }
   
   .product-Box{
-  
     padding: 7%;
     float: left;
- 
-
   }
 
   .sweetsImg:hover, .B-CakeImg:hover{
- 
     border:7px solid var(--MyBord);
     transition: 0.4s;
-
   }
   
   .B-CakeImg{
@@ -423,16 +414,14 @@ width: 100%;
     margin: 1px;
     padding: 5px;
     align-self: center;
-
   }
-  .sweetsImg{
-    
+
+  .sweetsImg{ 
     width: 30vh;
     height: max(30vh);
     margin-top: 0;
     padding:0;
     display: flex;
- 
   }
 
   .picDesc{
@@ -450,9 +439,6 @@ width: 100%;
 .CartQTY{
     width: 30px;
 }
-
-
-
 
 .approve{
     position: relative;
@@ -512,9 +498,6 @@ width: 100%;
 
 
 
-
-
-
   /*Baker's Orders Pages*/
 
  .ordersTable{
@@ -571,24 +554,25 @@ width: 100%;
     float: right;
     word-spacing: 20%;
     color: var(--MyDarkBrown);
-    font-weight: bold;
-    
+    font-weight: bold;  
   }
 
   .TotalOrdersTable td:last-child{
     text-align: left;
   }
+
   .TotalOrdersTable tr:last-child{
     text-align: left;
   }
+
 #DateTimeHeader{
-    font-family: MyFontBold;
+  font-family: MyFontBold;
 	margin-top: 3%;
 	font-size: 25PX;
 	text-align: center;
 	color: var(--MyBord);
 	font-weight: bold;
 	margin-left: 0;
-    letter-spacing: 0.3px;
-    word-spacing: 1PX;
+  letter-spacing: 0.3px;
+  word-spacing: 1PX;
 }
