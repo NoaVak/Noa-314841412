@@ -1,0 +1,53 @@
+
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='StylesCss.css')
+  script(defer='' src="Project's JS.js")
+  title Baker&apos;s Sign In Page
+#gridContainer
+  .grid-top
+    a(href='SoppingCart.pug')
+      img.shoppingCart(src='shopping Cart.svg' alt='shoppinCart')
+    center
+      nav
+        ul.moveToHeader
+          a(href='HomePage.pug') Home Page
+          a(href='CupcakePage.pug') Cupcake
+          a(href='BirthdayCakesPage.pug') BirthdayCakes
+          a(href='PaistriesPage.pug') Paistries
+          a(href='SignInPage.pug') Sign In
+          a(href='BakerSignIn.pug') Baker Sign In
+  #grid-left
+    img.LogoImg(src='Logo.png' alt='LogoPic')
+  #grid-main
+    #signinmain
+      center
+        h1#MyHeader Welcome Back 
+        h3#secondHeader Please Sign In 
+        br
+        br
+      form#SignInForm(action="/selectAllCust" method="get")
+        fieldset.fieldset
+          br
+          label#email(for='email')  Email: 
+          input#email.inputs(type='email' name='email' placeholder='Noa@Gmail.com' required='[^ @]@[^ @].com')
+          br
+          br
+          label(for='password') Password: 
+          input#password(type='password' name='password' required='' minlength='8' maxlength='12')
+          br
+          br
+          label I&apos;m The Baker
+          input(type='radio' required='')
+          br
+          br
+          input#SignButton.SignButton(type="submit", name= "Submit",value="Sign In") 
+          br
+          br
+      br
+      a(href='SignInPage.pug')
+        button#CustomerSignIn.CustomerSignIn I&apos;m A Customer
+      a(href='HomePage.pug')
+        button#backBotton.backBotton Back

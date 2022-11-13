@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS `Customers`(
+    id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    FName varchar(200) NOT NULL,
+    LName varchar(200)  NOT NULL,
+    Email varchar(200)  NOT NULL,
+    PhomeNumber varchar(200)  NOT NULL,
+    Password varchar(200)  NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+insert into Customers (FName,LName,Email,PhomeNumber,Password) values ("Lil","zam", "Zam@gmail.com","0502910061","12345");
+Select * from Customers;
+
+
+
+CREATE TABLE IF NOT EXISTS `Orders`(
+    id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    ItemName varchar(100) NOT NULL,
+    ItemQuantity int(10)  NOT NULL,
+    CustomerNumber int(11)  NOT NULL,
+    BrunchRelated varchar(100)  NOT NULL,
+    Status varchar(100)  NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `Bakers`(
+    id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Email varchar(200)  NOT NULL,
+    Password varchar(200)  NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+insert into Bakers (Email,Password) values ("Hamalca@gmail.com","1234578");
+Select * from Bakers;

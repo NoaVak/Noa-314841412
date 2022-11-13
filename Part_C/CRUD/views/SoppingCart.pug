@@ -1,0 +1,88 @@
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='StylesCss.css')
+  script(defer='' src="Project's JS.js")
+    title Shopping Cart Page
+  body
+    #gridContainer
+      .grid-top
+        a(href='SoppingCart.pug')
+          img.shoppingCart(src='shopping Cart.svg', alt='shoppinCart')
+        center
+          nav
+            ul.moveToHeader
+              a(href='HomePage.pug') Home Page
+              a(href='CupcakePage.pug') Cupcake
+              a(href='BirthdayCakesPage.pug') BirthdayCakes
+              a(href='PaistriesPage.pug') Paistries
+              a(href='SignInPage.pug') Sign In
+      #grid-left
+        img.LogoImg(src='Logo.png', alt='LogoPic')
+      #grid-main
+        h1#MyHeader Shopping Cart
+        table.ShopingTable
+          thead
+            tr
+              th Number
+              th Item Name
+              th Item Price
+              th Item Quantity
+              th Total Item Price
+          tbody
+            tr
+              th 1
+              th B-cake1
+              th $100
+              th
+                input.CartQTY(type='number', value='1')
+              th $100
+            tr
+              th 2
+              th B-cake5
+              th $100
+              th
+                input.CartQTY(type='number', value='1')
+              th $100
+        br
+        br
+        .TotalPrice
+          table.TotalPriceTable
+            tbody
+              tr
+                td Friendship Discount:
+                td 10%
+              tr
+                td Total Payment:
+                td $200.00
+          |  
+          br
+          br
+          br
+          br
+          #blur.LocatinBlurSelcation
+            a#blur(href='#')
+              img#LocationLogo.approve(src='location logo.svg', alt='locationLogo', onclick='toggle()')
+          h3#cartSummery Click To Set Location
+        #PopUp
+          br
+          h3#msgAPProved  Choose Your Preferd Brunch:
+          br
+          br
+          form.StatusForm(action='#')
+            label(for='Location') Choose Your Preferd Brunch:
+            select#Location(name='Location')
+              option(value='Tel-Aviv') Tel-Aviv
+              option(value='Beer Sheva') Beer Sheva
+          a#clickAproval(href='#', onclick='toggle()') Ok
+          
+      
+          br
+          br
+        br
+        |  
+        br
+        button#PaymentButton.PaymentButton Click To Pay
+        br
+        br

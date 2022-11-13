@@ -1,0 +1,93 @@
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='StylesCss.css')
+  script(defer='' src="Project's JS.js")
+  title Cupcake Page
+#gridContainer
+  .grid-top
+    a(href='SoppingCart.pug') 
+      img.shoppingCart(src='shopping Cart.svg' alt='shoppinCart')
+    center
+      nav
+        ul.moveToHeader
+          a(href='HomePage.pug') Home Page
+          a(href='CupcakePage.pug') Cupcake
+          a(href='BirthdayCakesPage.pug') BirthdayCakes
+          a(href='PaistriesPage.pug') Paistries
+          a(href='SignInPage.pug') Sign In
+  #grid-left
+    img.LogoImg(src='Logo.png' alt='LogoPic')
+  #grid-main
+    h1#MyHeader Cupcacks Gallery
+    br
+    #blur.CakesGallery
+      .product-Box
+        img.sweetsImg(src='cupcake1.jpg')
+        h3.picDesc Cupcake1
+        span.Price Price Per Unit:$50
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.sweetsImg(src='cupcake2.png')
+        h3.picDesc Cupcake2
+        span.Price Price Per Unit:$50
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.sweetsImg(src='cupcake3.jpg')
+        h3.picDesc Cupcake3
+        span.Price Price Per Unit:$50
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.sweetsImg(src='cupcake4.jpg')
+        h3.picDesc Cupcake4
+        span.Price Price Per Unit:$50
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.sweetsImg(src='cupcake5.jpg')
+        h3.picDesc Cupcake5
+        span.Price Price Per Unit:$50
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.sweetsImg(src='cupcake6.jpg')
+        h3.picDesc Cupcake6
+        span.Price Price Per Unit:$50
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+    #PopUp
+      br
+      h3#msgAPProved  The Item was added
+      br
+      br
+      a#clickAproval(href='#' onclick='toggle()') Ok
+      br
+      br

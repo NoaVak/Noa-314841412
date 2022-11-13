@@ -1,0 +1,29 @@
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='StylesCss.css')
+  script(defer='' src="Project's JS.js")
+  title Welcome Baker
+#gridContainer
+  .grid-top
+    a(href='SoppingCart.pug')
+      img.shoppingCart(src='shopping Cart.svg' alt='shoppinCart')
+    center
+      nav
+        ul.moveToHeader
+          a(href='HomePage.pug') Customer Presention
+          a(href='selectAllCust.pug') Buisnes Data
+          a(href='BakerSignIn.pug') Log Out
+        
+  #grid-left
+    img.LogoImg(src='Logo.png' alt='LogoPic')
+  #grid-main
+    br
+    br
+    h1.smallheader Hello Baker
+    br
+    br
+    form(action="/ShowAllCustomers", method="get") 
+        label#clickLable(for="") click SELECT to view all the Customers
+        input.clickbutton(type="submit", value="SELECT") 

@@ -1,0 +1,52 @@
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='StylesCss.css')
+  script(defer='' src="Project's JS.js")
+  title Customer's Table
+#gridContainer
+  .grid-top
+    a(href='SoppingCart.pug')
+      img.shoppingCart(src='shopping Cart.svg' alt='shoppinCart')
+    center
+      nav
+        ul.moveToHeader
+          a(href='HomePage.pug') Customer Presention
+          a(href='selectAllCust.pug') Buisnes Data
+          a(href='SignInPage.pug') Sign In
+          a(href='SignInPage.pug') Log Out
+  #grid-left
+    img.LogoImg(src='Logo.png' alt='LogoPic')
+  #grid-main
+    h1.smallheader #{var1}
+    br
+    br      
+    table.ShopingTable
+        tr.trCust
+            th.trCust ID
+            th.trCust First Name
+            th.trCust Last Name
+            th.trCust Email
+            th.trCust Phome Number
+            th.trCust Password
+            
+
+        each n in pple
+            tr
+            td= n.id 
+            td= n.FName
+            td= n.LName
+            td= n.Email
+            td= n.PhomeNumber
+            td= n.Password
+    br
+    br 
+    form(action="/getCustomerByName", method="get") 
+        label#clickLable(for="") click SEARCH to find a specific customer
+        input.clickbutton(type="submit", value="SEARCH") 
+            
+            
+            
+
+

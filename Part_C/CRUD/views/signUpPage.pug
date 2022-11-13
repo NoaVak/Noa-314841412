@@ -1,0 +1,59 @@
+
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='StylesCss.css')
+  script(defer='' src="Project's JS.js")
+  title Document
+#gridContainer
+  .grid-top
+    a(href='SoppingCart.pug')
+      img.shoppingCart(src='shopping Cart.svg' alt='shoppinCart')
+    center
+      nav
+        ul.moveToHeader
+          a(href='HomePage.pug') Home Page
+          a(href='CupcakePage.pug') Cupcake
+          a(href='BirthdayCakesPage.pug') BirthdayCakes
+          a(href='PaistriesPage.pug') Paistries
+          a(href='SignInPage.pug') Sign In
+  #grid-left
+    img.LogoImg(src='Logo.png' alt='LogoPic')
+  #grid-main
+    #signinmain
+      center
+        h1#MyHeader.SUpHeader Welcome
+        h3#secondHeader.SUpHeader  Please Sign Up 
+        br
+        br
+
+      form#SignUpForm.SignUpForm(action="/InsertCustomer" method="post")
+        fieldset.fieldset
+          label(for="") First Name:
+          input#FName(type="text", name="CustomerFirstName", required)
+          br
+          br
+          label(for="") Last Name:
+          input#LName(type="text", name="CustomerLastName", required)
+          br
+          br
+          label(for="") Email:
+          input#email(type="email", name="CustomerEmail", required)
+          br
+          br
+          label(for="") Phone Number: 
+          input#PhoneNum(type="phone", name="CustomerPhoneNumber", required)
+          br
+          br
+          label(for="") Password:
+          input#password(type="password", name="CustomerPassword", required, minlength='5' maxlength='12')
+          br
+          input#SignButton.SignButton(type="submit", name= "Submit",value="Sign Up") 
+      br
+      br
+      br
+      a(href='SignInPage.pug')
+        button#backBotton.backBotton Back
+      br
+      br

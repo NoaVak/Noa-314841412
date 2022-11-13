@@ -1,0 +1,48 @@
+
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='StylesCss.css')
+  script(defer='' src="Project's JS.js")
+  title Home Page
+#gridContainer
+  .grid-top
+    a(href='SoppingCart.pug')
+      img.shoppingCart(src='shopping Cart.svg' alt='shoppinCart')
+    center
+      nav
+        ul.moveToHeader
+          a(href='HomePage.pug') Home Page
+          a(href='CupcakePage.pug') Cupcake
+          a(href='BirthdayCakesPage.pug') BirthdayCakes
+          a(href='PaistriesPage.pug') Paistries
+          a(href='SignInPage.pug') Sign In
+  #grid-left
+    img.LogoImg(src='Logo.png' alt='LogoPic')
+    a(href='BakerSignIn.pug')
+      h3#OwnerEntrance  I&apos;m The Baker
+  #grid-main
+    h1#MyMainHeader What Are You Looking For?
+    br
+    br
+    br
+    #weekenedSale
+      h2(contenteditable='true')  Weekend SALE! Weekend SALE!
+    br
+    br
+    br
+    .HomePageGallery
+      center
+        .product-Box
+          img.HPImg(src='HP B-cake.jpg')
+          br
+          a.linkHomePage(href='BirthdayCakesPage.pug') BirthdayCakes
+        .product-Box
+          img.HPImg(src='HP Cupcake.jpg')
+          br
+          a.linkHomePage(href='CupcakePage.pug') Cupcakes
+        .product-Box
+          img.HPImg(src='HP Paistry.jpg')
+          br
+          a.linkHomePage(href='PaistriesPage.pug') Paistries

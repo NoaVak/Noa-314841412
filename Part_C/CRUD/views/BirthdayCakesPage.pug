@@ -1,0 +1,123 @@
+
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='StylesCss.css')
+  script(defer='' src="Project's JS.js")
+  title Birthday Cakes Page
+#gridContainer
+  .grid-top
+    a(href='SoppingCart.pug')
+      img.shoppingCart(src='shopping Cart.svg' alt='shoppinCart')
+    center
+      nav
+        ul.moveToHeader
+          a(href='HomePage.pug') Home Page
+          a(href='CupcakePage.pug') Cupcake
+          a(href='BirthdayCakesPage.pug') BirthdayCakes
+          a(href='PaistriesPage.pug') Paistries
+          a(href='SignInPage.pug') Sign In
+  #grid-left
+    img.LogoImg(src='Logo.png' alt='LogoPic')
+  #grid-main
+    h1#MyHeader Cakes Gallery
+    #blur.CakesGallery
+      .product-Box
+        img.B-CakeImg(src='B-Cake10.jpg')
+        h3.picDesc B-Cake1
+        span.Price Price Per Unit:$100
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.B-CakeImg(src='B-Cake18.jpg')
+        h3.picDesc B-Cake2
+        span.Price Price Per Unit:$100
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.B-CakeImg(src='B-Cake11.jpg')
+        h3.picDesc B-Cake3
+        span.Price Price Per Unit:$100
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.B-CakeImg(src='B-Cake12.jpg')
+        h3.picDesc B-Cake4
+        span.Price Price Per Unit:$100
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.B-CakeImg(src='B-Cake2.jpg')
+        h3.picDesc B-Cake5
+        span.Price Price Per Unit:$100
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.B-CakeImg(src='B-Cake3.jpg')
+        h3.picDesc B-Cake6
+        span.Price Price Per Unit:$100
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.B-CakeImg(src='B-Cake16.jpg')
+        h3.picDesc B-Cake7
+        span.Price Price Per Unit:$100
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.B-CakeImg(src='B-Cake19.jpg')
+        h3.picDesc B-Cake8
+        span.Price Price Per Unit:$100
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+      .product-Box
+        img.B-CakeImg(src='B-Cake17.jpg')
+        h3.picDesc B-Cake9
+        span.Price Price Per Unit:$100
+        br
+        span.Price Units To Add
+        input.CartQTY(type='number' value='1')
+        br
+        br
+        a.approve(href='#' onclick='toggle()') Add To Cart
+    #PopUp
+      br
+      h3#msgAPProved  The Item Has Been Added
+      br
+      br
+      a#clickAproval(href='#' onclick='toggle()') Ok
+      br
+      br

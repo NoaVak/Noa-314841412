@@ -1,0 +1,46 @@
+
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='StylesCss.css')
+  script(defer='' src="Project's JS.js")
+  title Document
+#gridContainer
+  .grid-top
+    a(href='SoppingCart.pug')
+      img.shoppingCart(src='shopping Cart.svg' alt='shoppinCart')
+    center
+      nav
+        ul.moveToHeader
+          a(href='HomePage.pug') Home Page
+          a(href='CupcakePage.pug') Cupcake
+          a(href='BirthdayCakesPage.pug') BirthdayCakes
+          a(href='PaistriesPage.pug') Paistries
+          a(href='SignInPage.pug') Sign In
+  #grid-left
+    img.LogoImg(src='Logo.png' alt='LogoPic')
+  #grid-main
+    #signinmain
+      center
+        h1#MyHeader Welcome Back 
+        h3#secondHeader Please Sign In 
+        br
+        br
+      form#SignInForm(action='HomePage.pug' method='post')
+        fieldset.fieldset
+          label#email(for='email')  Email: 
+          input#email.inputs(type='email' name='email' placeholder='Noa@Gmail.com' required='[^ @]@[^ @].com')
+          br
+          br
+          label(for='password') Password: 
+          input#password(type='password' name='password' required='' minlength='8' maxlength='12')
+          br
+          br
+          a(href='HomePage.pug')
+            button#SignButton.SignButton(type='submit') Sign In
+      br
+      br
+      center
+        a(href='SignUpPage.pug')
+          button#SignButton.SignUpButton Sign Up
